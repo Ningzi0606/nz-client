@@ -1,6 +1,6 @@
 {
-  "version": "20261029.0040",
-  "base": "https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
+  "version": "20261029.0120",
+  "base": "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
       "sha256": "7cd6217550222f35a535673c683698bd5ad1d0455f7387651c613bcf7fdc93bb",
@@ -46,10 +46,10 @@
       "sha256": "42e064dd77678f8b06d9867169612828b15dbb67e1f3d00c844e17b366e78e23",
       "size": 5515108
     },
-    "game/mods/voicechat-fabric-2.6.27+26.3.jar": {
+    "game/mods/voicechat-2.6.27-mc26.3.jar": {
       "sha256": "9e1c93144a3f7498e546102f6786aea6e4992866c4c5d21bd2e0edb702399153",
       "size": 5611159
     }
   },
-  "remove": []
+  "remove": ["game/mods/voicechat-fabric-2.6.27+26.3.jar"]
 }
