@@ -1,9 +1,9 @@
 # 交接文档（给下一个 DSH / 管理员）
 
-> 最后更新：2026-10-28 16:00（Asia/Shanghai）
+> 最后更新：2026-10-28 23:55（Asia/Shanghai）
 > 服务器：`play.simpfun.cn:14039`（MC 26.3 / Fabric / 离线模式）
 > 仓库：`https://github.com/Ningzi0606/nz-client`（public，main）
-> 客户端清单版本：`20261028.1350`
+> 客户端清单版本：`20261028.2341`（v5.1）
 
 ---
 
@@ -12,6 +12,11 @@
 Windows 玩家双击 `凝紫客户端.exe` → 自动检查 GitHub 清单 → 增量更新 → 进游戏；
 白名单按名字（EasyWhitelist）；登录 EasyAuth；皮肤 Quick Skin（服务端同步）；
 Mac 玩家用独立包 + `.command` 脚本；发版双击 `一键发布.bat`。
+
+**v5.1（2026-10-28 晚，清单 `20261028.2341`）**：修了「点启动游戏后永远卡在 `检查 mod N/18`」——
+主程序 `UpdateMods()` 请求 Modrinth 时没有超时。现在所有网络请求 12 秒超时，
+且 `game\mods` 里的 jar 数 ≥ 清单 mod 数时直接跳过联网检查（强制检查：`config.ini` 加 `modupdate=1`）。
+排查玩家「进不去游戏」时先看 `launcher.log` 最后一行：停在 `玩家名: xxx` 就是老版本，让他更新一次即可。
 
 ---
 
