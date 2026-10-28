@@ -1,5 +1,5 @@
 {
-  "version": "20261029.0120",
+  "version": "20261029.0210",
   "base": "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
@@ -25,6 +25,10 @@
     "更新说明.txt": {
       "sha256": "9c200fddf208b977ef7e558ea8955b259bef3f53242ecbd33f56dcf469434ba1",
       "size": 796
+    },
+    "updater.ini": {
+      "sha256": "edfbc7708871a29c2eef119c948e354f6fe87c94ca36c39ad201dfb72d785e66",
+      "size": 98
     },
     "修复说明-v5.1.txt": {
       "sha256": "ec737b889b9af31664f0a4138070c7991a99e13c7eef4482cb09032757bbb1ed",
