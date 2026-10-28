@@ -1,0 +1,26 @@
+{
+  "version": "15.1",
+  "loadlist": [
+    {
+      "name": "LittleSkin",
+      "type": "BlessingSkin",
+      "apiRoot": "https://littleskin.cn/api/",
+      "sessionRoot": "https://littleskin.cn/sessionserver/"
+    },
+    {
+      "name": "Mojang",
+      "type": "MojangAPI",
+      "apiRoot": "https://api.mojang.com/",
+      "sessionRoot": "https://sessionserver.mojang.com/"
+    }
+  ],
+  "enableDynamicSkull": true,
+  "enableTransparentSkin": true,
+  "forceIgnoreHttpsCertificate": false,
+  "forceLoadAllTextures": true,
+  "enableCape": true,
+  "cacheExpiry": 30,
+  "threadPoolSize": 8,
+  "enableLogStdOut": false,
+  "cacheExpiryUni": 30
+}
