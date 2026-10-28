@@ -52,7 +52,9 @@
 凝紫客户端(主程序).exe, logo.png, app.ico, manifest.json,
 使用说明.txt, 更新说明.txt,
 game/config/CustomSkinLoader/CustomSkinLoader.json,
-game/CustomSkinLoader/CustomSkinLoader.json
+game/CustomSkinLoader/CustomSkinLoader.json,
+game/mods/Quick Skin - Fabric - 26.3-3.1.1.jar,
+game/mods/architectury-fabric-22.0.5.jar
 ```
 
 要加文件就往 `INCLUDE` 里加一行；**不要**把 `config.ini`（玩家名/密码）、`game/saves`、`game/options.txt`、`game/logs`、`游戏资源-assets.zip` 放进去。
