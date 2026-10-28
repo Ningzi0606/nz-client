@@ -1,5 +1,5 @@
 {
-  "version": "20261028.1330",
+  "version": "20261028.1350",
   "base": "https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
@@ -33,6 +33,14 @@
     "game/CustomSkinLoader/CustomSkinLoader.json": {
       "sha256": "6eb07493c49d05166f770aca82bfe3359db1c6bf99fb80411de6e6867f06018b",
       "size": 961
+    },
+    "game/mods/architectury-fabric-22.0.5.jar": {
+      "sha256": "c6a60979f75fdf07a97971711b42529bc84cd7e4c873625d2ce0faf34278ecda",
+      "size": 622542
+    },
+    "game/mods/Quick Skin - Fabric - 26.3-3.1.1.jar": {
+      "sha256": "42e064dd77678f8b06d9867169612828b15dbb67e1f3d00c844e17b366e78e23",
+      "size": 5515108
     }
   },
   "remove": []
