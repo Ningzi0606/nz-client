@@ -1,5 +1,5 @@
 {
-  "version": "20261028.1350",
+  "version": "20261028.2341",
   "base": "https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
@@ -19,12 +19,16 @@
       "size": 1323
     },
     "凝紫客户端(主程序).exe": {
-      "sha256": "b0d1bf0e5bcbeef9ae74c1961ec79c6b1227a0aef64812e0138619994b7e4c46",
-      "size": 273408
+      "sha256": "73ed457b0e1043568ce50ebf291a661103807145b57e898852bfd62c315c7df1",
+      "size": 272896
     },
     "更新说明.txt": {
       "sha256": "9c200fddf208b977ef7e558ea8955b259bef3f53242ecbd33f56dcf469434ba1",
       "size": 796
+    },
+    "修复说明-v5.1.txt": {
+      "sha256": "ec737b889b9af31664f0a4138070c7991a99e13c7eef4482cb09032757bbb1ed",
+      "size": 2464
     },
     "game/config/CustomSkinLoader/CustomSkinLoader.json": {
       "sha256": "8d68a295b66743fc74ebb00f8bc9efe5fd1adf3bc4573e65279635492d02d5f8",
