@@ -1,5 +1,5 @@
 {
-  "version": "20261029.1101",
+  "version": "20261029.1149",
   "base": "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
