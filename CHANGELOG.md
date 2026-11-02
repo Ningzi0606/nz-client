@@ -1,11 +1,59 @@
-# v5 / v5.1 更新日志
+# 凝紫客户端 更新日志（v5 → v5.3）
 
-> 2026-10-28｜凝紫服（Minecraft 26.3 / Fabric）
-> 服务器：`play.simpfun.cn:14039`｜客户端清单版本：`20261028.2341`（v5.1）
+> 凝紫服（Minecraft 26.3 / Fabric）｜服务器：`play.simpfun.cn:14039`
+> 当前客户端清单版本：`20261029.1149`
+
+| 版本 | 日期 | 清单版本 | 一句话 |
+|---|---|---|---|
+| **v5.3** | 2026-10-29 | `20261029.1149` | 干净整包重发 + 更新器换代（进度条 / 主程序最后写 / 支持 remove） |
+| **v5.2** | 2026-10-29 | `20261029.1149` | 加语音 mod、清单与更新地址改走 gh-proxy 镜像、修哈希一致性 |
+| **v5.1** | 2026-10-28 晚 | `20261028.2341` | 修「启动卡在 检查 mod N/18」 |
+| **v5** | 2026-10-28 | `20261028.1350` | 自动更新器 / 白名单按名字 / 皮肤服务端同步 |
 
 ---
 
-## 零、v5.1（2026-10-28 晚）：修「启动卡在 检查 mod N/18」
+## v5.3（2026-10-29）：整包重发 + 更新器换代
+
+**背景**：v5.2 发完之后更新日志停在 v5.1，玩家看到的 `更新说明.txt` 停在 v5，版本口径一度有三套（日志 5.1 / 清单 5.2 / 包名 5.3）。本次把三者对齐。
+
+**更新器**：`凝紫客户端.exe`，13,312 B，内部名 `updater_new.exe`，源码 `src/updater.cs`。
+
+1. 加了进度条窗口「凝紫客户端 · 正在更新」，逐文件显示 `正在更新 3/7`；
+2. 下载顺序把 `凝紫客户端(主程序).exe` 排到最后——它最容易被占用，失败也不拖累其它文件；
+3. 支持清单里的 `remove` 字段，能主动删掉旧文件名（v5.2 用它清了旧的 `voicechat-fabric-…`）；
+4. 路径按段 `Uri.EscapeDataString`，带空格/中文的 mod 文件名不再 404；
+5. 拉清单 15 秒、下载 30 秒超时；任何一步失败只记 `updater.log`，照常启动游戏。
+
+> 更新器自身不在清单里（运行中的 exe 覆盖不了自己），只能随整包下发。
+> **所以老玩家的更新器不会被自动替换，必须重下整包。**
+
+**整包**：`凝紫启动器-v5.3.zip`，1.16 GB / 5874 个条目（含内置 Java 与 403 MB 资源 zip）。
+
+**已知打包缺陷（下次修）**：
+
+- 包里混进了 `config.ini`（含玩家名）、`.clientver`、`launcher.log` / `error.log` / `updater.log`、
+  `game/logs` 13 个、`game/temp` 16 个、`game/xaero` 缓存 196 个；
+- `游戏资源-assets.zip`（403 MB）与已解压的 `game/assets`（5147 个对象）同时存在，包体翻倍；
+- 两个 exe 的 FileVersion 均为 `0.0.0.0`，只能靠 `.clientver` 判断版本；无代码签名，首启会被 SmartScreen 提示。
+
+## v5.2（2026-10-29）：语音 + 国内镜像 + 哈希一致性
+
+1. **Simple Voice Chat**：`game/mods/voicechat-2.6.27-mc26.3.jar`（5.6 MB），服务端装同名 mod，靠近即语音；
+   旧文件名写入 `remove`，玩家侧自动清理，不用手动删；
+2. **清单改走国内镜像**：`base` 换成 `https://gh-proxy.com/https://raw.githubusercontent.com/…/dist/`，
+   `updater.ini` 里的 `url=` 同样走代理，解决国内直连 raw 超时；
+3. **`updater.ini` 纳入清单**：清单地址能自愈到快镜像，不用玩家手动改；
+4. **哈希一致性**：关掉 `.gitattributes` 的 EOL 转换、按 dist 重算 sha、归一化后再次重算
+   ——修的就是 `updater.log` 里那串 `校验失败: updater.ini` 死循环（镜像缓存与 raw 内容不一致 → sha 对不上 →
+   跳过并每次重试）；
+5. 顺带把 `修复说明`、`使用说明.txt` 纳入下发。
+
+**仍待解决**：`updater.log` 显示 10:21 / 11:48 / 11:50 三次 `校验失败`，说明发版后没在干净目录自测；
+另有一次 `UnauthorizedAccessException`（主程序运行中被覆盖），需要"先退游戏再更新"或加重试。
+
+---
+
+## v5.1（2026-10-28 晚）：修「启动卡在 检查 mod N/18」
 
 **症状**：点「启动游戏」后进度条停在 `检查 mod 10/18`，一直不动，游戏永远起不来；
 关掉重开还是一样。日志特征：`launcher.log` 最后一行是 `玩家名: xxx` 就没了，
@@ -109,8 +157,11 @@
 | `CHANGELOG.md` | 本文件 |
 | `HANDOVER.md` | 交接文档（给下一个 DSH / 管理员） |
 
-当前清单版本 `20261028.1350`，10 个文件，含
-`game/mods/Quick Skin - Fabric - 26.3-3.1.1.jar`、`game/mods/architectury-fabric-22.0.5.jar`。
+当前清单版本 `20261029.1149`，13 个文件：主程序、`updater.ini`、`app.ico`、`logo.png`、`manifest.json`、
+`使用说明.txt`、`更新说明.txt`、`修复说明-v5.1.txt`、2 份 CustomSkinLoader 配置、
+`architectury-fabric-22.0.5.jar`、`Quick Skin - Fabric - 26.3-3.1.1.jar`、`voicechat-2.6.27-mc26.3.jar`。
+
+> 注意：**更新器 `凝紫客户端.exe` 不在清单里**，改它必须重发整包，老玩家不会自动拿到新更新器。
 
 ---
 
@@ -129,6 +180,10 @@
 
 ## 七、已知问题 / 待办
 
+- [ ] **整包白名单**：整包是直接拷目录打出来的，绕过了 `发布.py` 的 INCLUDE，才把 `config.ini`、日志、`game/temp`、xaero 缓存一起打进去；`发布.py` 需要一份显式 EXCLUDE，并让 `--pack` 走同一份规则；
+- [ ] **资源双份**：`游戏资源-assets.zip` 与解压后的 `game/assets` 二选一，现在包体 1.16 GB；
+- [ ] **exe 版本信息**：两个 exe 的 FileVersion 还是 `0.0.0.0`，编译时带上版本号才能排查问题；
+- [ ] **发版自测**：每次发完在干净目录跑一次，确认 `updater.log` 里没有 `校验失败` 再放玩家；
 - [ ] **Mac 包未真机验证**：`凝紫启动器.command` 依赖 `curl` / `shasum` / `osascript`，Prism 的 `--launch` 参数也要实测；第一个 Mac 玩家跑完收集 `启动器日志.txt`；
 - [ ] `start.sh` 里 Migrate 每次启动都跑（会重写 whitelist/usercache/ops），可择机删掉；
 - [ ] `SkinRestorer` 的 `/skin set web` 走 MineSkin，没有 API key（有频率限制），需要的话去 account.mineskin.org 申请；
