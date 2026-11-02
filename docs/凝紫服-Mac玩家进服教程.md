@@ -22,7 +22,7 @@
    /register 你的密码 你的密码
    /login 你的密码
    /autologin set 你的密码   （可选，自动登录）
-6. 提示 You are not white-listed = 白名单没加，把准确名字发管理
+6. 本服没有白名单，不用申请；提示 You are not white-listed = 客户端太旧，换最新整包
 
 以后每次玩：只双击「凝紫启动器.command」就行（会自动更新）
 皮肤：进游戏按 Esc → Change Skin
@@ -77,8 +77,8 @@ Windows 那个 exe 是 C# 写的、还带了 Windows 版 Java，macOS 上跑不�
 ## 五、进服
 
 1. 游戏启动后 → 多人游戏 → 服务器列表里已有「凝紫服」（`play.simpfun.cn:14039`）；
-2. **白名单**：没加会提示 `You are not white-listed on this server!`  
-   把准确名字（大小写一致）发管理，管理执行 `easywhitelist add 名字`，立刻生效；
+2. **没有白名单**：不用提前加名字，进服直接注册即可；若仍提示 `You are not white-listed on this server!`，说明客户端旧或地址错，换最新整包、确认地址是 `play.simpfun.cn:14039`；
+   把 `启动器日志.txt` 发管理，比单纯报名字有用；
 3. 第一次进服会被定住，依次输入：
    ```
    /register 密码 密码      ← 注册（两遍）
@@ -116,7 +116,7 @@ Windows 那个 exe 是 C# 写的、还带了 Windows 版 Java，macOS 上跑不�
 | 提示找不到 Java | 没装 / 版本不对 | 装 Java 25，Prism 里重新选 Java |
 | 双击后只打开 Prism，不自动进游戏 | Prism 版本不支持命令行启动 | 在 Prism 里点「凝紫服」→ 启动 |
 | 启动器日志里「拉取清单失败」 | 连不上 GitHub | 挂代理后再开，或忽略（照常进游戏） |
-| `You are not white-listed` | 白名单没加 | 把准确名字发管理 |
+| `You are not white-listed` | 白名单已关闭，出现说明客户端旧 / 地址错 | 换最新整包，确认地址 |
 | 进服不能动 | 没登录 | `/login 密码` |
 | 游戏很卡 | 内存/渲染设置 | Prism 实例设置里内存调到 4–6G；光影在 macOS 上支持有限 |
 | 皮肤没变化 | 没选 / 没同步 | Esc → Change Skin 重新选 |

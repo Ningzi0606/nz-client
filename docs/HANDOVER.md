@@ -10,7 +10,7 @@
 ## 0. 一句话现状
 
 Windows 玩家双击 `凝紫客户端.exe` → 自动检查 GitHub 清单 → 增量更新 → 进游戏；
-白名单按名字（EasyWhitelist）；登录 EasyAuth；皮肤 Quick Skin（服务端同步）；
+白名单**已停用**（2026-11 起不再需要，EasyWhitelist 插件仍在但不参与放行）；登录 EasyAuth；皮肤 Quick Skin（服务端同步）；
 Mac 玩家用独立包 + `.command` 脚本；发版双击 `一键发布.bat`。
 
 ---
@@ -66,14 +66,14 @@ cd /home/container; java -cp /home/container Migrate; java -cp /home/container V
 
 ### 2.3 关键配置
 
-- `server.properties`：`online-mode=false`、`white-list=true`、`enforce-whitelist=true`、`level-name=NZ WD`、`max-players=20`；
+- `server.properties`：`online-mode=false`、`white-list=false`（2026-11 关闭，之前是 `true`）、`enforce-whitelist=false`、`level-name=NZ WD`、`max-players=20`；
 - `config/quickskin-server.json`：纹理上限 `maxTextureUploadKilobytes`（默认 16384 KiB），`shareAccountSkinWithVanillaClients`（默认 false）；
 - `config/skinrestorer/`：皮肤缓存；`/skin set web` 走 MineSkin，无 API key（可选申请）。
 
 ### 2.4 常用服务器命令（面板控制台，**不需要打斜杠**）
 
 ```
-easywhitelist add 名字 / remove 名字     加/删白名单（区分大小写，即时生效）
+easywhitelist add 名字 / remove 名字     加/删白名单（已停用，命令仍可用）
 easyop 名字 / easydeop 名字              给/取消 OP
 easyban 名字 / easypardon 名字           封禁/解封
 list                                    在线玩家

@@ -66,7 +66,7 @@ usem = """凝紫服务器 二周目 - 独立客户端 v5
 4. 回游戏重进；没变化就删掉 game\\CustomSkinLoader\\caches 再开
 
 五、进不去游戏？
-- 提示 You are not white-listed → 把准确名字发给管理员加白名单
+- 提示 You are not white-listed → 本服没有白名单，说明客户端旧或地址错，换最新整包
 - 提示版本不符 → 别自己加模组，用群里发的完整客户端
 - 启动器报错 → 把客户端目录里的 updater.log / launcher.log 发给管理员
 """
