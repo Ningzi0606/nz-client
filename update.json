@@ -55,5 +55,7 @@
       "size": 5611159
     }
   },
-  "remove": []
+  "remove": [
+    "game/mods/voicechat-fabric-2.6.27+26.3.jar"
+  ]
 }
