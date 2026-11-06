@@ -1,89 +1,93 @@
 {
-    "version":  "20261105.1153",
-    "base":  "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
-    "files":  {
-                  "app.ico":  {
-                                  "sha256":  "7cd6217550222f35a535673c683698bd5ad1d0455f7387651c613bcf7fdc93bb",
-                                  "size":  244463
-                              },
-                  "logo.png":  {
-                                   "sha256":  "83cf79ce68795c7e15f97f1ad0b8b49e0f8b2f2ca0bef495015cc55a2450d653",
-                                   "size":  13069
-                               },
-                  "updater.ini":  {
-                                      "sha256":  "edfbc7708871a29c2eef119c948e354f6fe87c94ca36c39ad201dfb72d785e66",
-                                      "size":  98
-                                  },
-                  "使用说明.txt":  {
-                                   "sha256":  "a661e8bcb6b121bbf2a39cade91427891d875edb05238b49aa3aa326aca76851",
-                                   "size":  1595
-                               },
-                  "修复说明-v5.1.txt":  {
-                                        "sha256":  "ec17297039a7ce7590164f129d37d04f35120d58c848113b4683257dbb6a932d",
-                                        "size":  2510
-                                    },
-                  "凝紫客户端(主程序).exe":  {
-                                         "sha256":  "73ed457b0e1043568ce50ebf291a661103807145b57e898852bfd62c315c7df1",
-                                         "size":  272896
-                                     },
-                  "更新说明.txt":  {
-                                   "sha256":  "9de446d88f99e2804c37c7534e544227c3f278689a4e4c6fa74ccaa47aaf0515",
-                                   "size":  2208
-                               },
-                  "game/config/CustomSkinLoader/CustomSkinLoader.json":  {
-                                                                             "sha256":  "8d68a295b66743fc74ebb00f8bc9efe5fd1adf3bc4573e65279635492d02d5f8",
-                                                                             "size":  640
-                                                                         },
-                  "game/CustomSkinLoader/CustomSkinLoader.json":  {
-                                                                      "sha256":  "6eb07493c49d05166f770aca82bfe3359db1c6bf99fb80411de6e6867f06018b",
-                                                                      "size":  961
-                                                                  },
-                  "game/mods/architectury-fabric-22.0.5.jar":  {
-                                                                   "sha256":  "c6a60979f75fdf07a97971711b42529bc84cd7e4c873625d2ce0faf34278ecda",
-                                                                   "size":  622542
-                                                               },
-                  "game/mods/Quick Skin - Fabric - 26.3-3.1.1.jar":  {
-                                                                         "sha256":  "42e064dd77678f8b06d9867169612828b15dbb67e1f3d00c844e17b366e78e23",
-                                                                         "size":  5515108
-                                                                     },
-                  "game/mods/voicechat-2.6.27-mc26.3.jar":  {
-                                                                "sha256":  "9e1c93144a3f7498e546102f6786aea6e4992866c4c5d21bd2e0edb702399153",
-                                                                "size":  5611159
-                                                            },
-                  "game/mods/cloth-config-fabric-26.3.159.jar":  {
-                                                                     "sha256":  "1716b9964f90d2b885f9bd3887f8824b71b55c32a4123a5853486e722f7c2e4b",
-                                                                     "size":  1135009
-                                                                 },
-                  "game/mods/delightlib-26.09.16-26.3-fabric.jar":  {
-                                                                        "sha256":  "6cc84add129b15dce423f261947200ed8d30dccb053727cfa220fb67c7835710",
-                                                                        "size":  60881
-                                                                    },
-                  "game/mods/display-delight-1.8.5-mc26.3.jar":  {
-                                                                     "sha256":  "25b209e8cdd534380cbe147f2af9ce6ab9441d3f70b58a465ea05fa00f03235a",
-                                                                     "size":  1382704
-                                                                 },
-                  "game/mods/FarmersDelight-26.3-3.6.30+refabricated.jar":  {
-                                                                                "sha256":  "930dcbc51aa2435d4345955aee7b2bbb5bc43c94c8d0859da703c645e9587269",
-                                                                                "size":  3482244
-                                                                            },
-                  "game/mods/moredelight-26.09.16-26.3-fabric.jar":  {
-                                                                         "sha256":  "dbbfcf23f109ddb08eb47e3e96a0aaebbe9dafbd3bec71aa882c36b92f0e2037",
-                                                                         "size":  152214
-                                                                     },
-                  "game/mods/rusticdelight-fabric-26.3-1.7.0.jar":  {
-                                                                        "sha256":  "b01591bce147fd6af0f517055a88e08f104d8abb6b192a543f4c596096325e3f",
-                                                                        "size":  1064440
-                                                                    },
-                  "game/mods/storagedelight-26.10.05-26.3-fabric.jar":  {
-                                                                            "sha256":  "b8bc866b64c1fae01ba4164a60307b0afaec893ec7ed80dbcbbff63084f165d4",
-                                                                            "size":  1048365
-                                                                        },
-                  "manifest.json":  {
-                                        "sha256":  "91374b6844e8f0cab8bb3bf465fd568840f7a33e34239db65f670d774fc9024a",
-                                        "size":  473
-                                    }
-              },
-    "remove":  [
-                   "game/mods/voicechat-fabric-2.6.27+26.3.jar"
-               ]
+  "version": "20261106.1250",
+  "base": "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
+  "files": {
+    "app.ico": {
+      "sha256": "7cd6217550222f35a535673c683698bd5ad1d0455f7387651c613bcf7fdc93bb",
+      "size": 244463
+    },
+    "logo.png": {
+      "sha256": "83cf79ce68795c7e15f97f1ad0b8b49e0f8b2f2ca0bef495015cc55a2450d653",
+      "size": 13069
+    },
+    "updater.ini": {
+      "sha256": "edfbc7708871a29c2eef119c948e354f6fe87c94ca36c39ad201dfb72d785e66",
+      "size": 98
+    },
+    "使用说明.txt": {
+      "sha256": "a661e8bcb6b121bbf2a39cade91427891d875edb05238b49aa3aa326aca76851",
+      "size": 1595
+    },
+    "修复说明-v5.1.txt": {
+      "sha256": "ec17297039a7ce7590164f129d37d04f35120d58c848113b4683257dbb6a932d",
+      "size": 2510
+    },
+    "凝紫客户端(主程序).exe": {
+      "sha256": "73ed457b0e1043568ce50ebf291a661103807145b57e898852bfd62c315c7df1",
+      "size": 272896
+    },
+    "更新说明.txt": {
+      "sha256": "9de446d88f99e2804c37c7534e544227c3f278689a4e4c6fa74ccaa47aaf0515",
+      "size": 2208
+    },
+    "game/config/CustomSkinLoader/CustomSkinLoader.json": {
+      "sha256": "8d68a295b66743fc74ebb00f8bc9efe5fd1adf3bc4573e65279635492d02d5f8",
+      "size": 640
+    },
+    "game/CustomSkinLoader/CustomSkinLoader.json": {
+      "sha256": "6eb07493c49d05166f770aca82bfe3359db1c6bf99fb80411de6e6867f06018b",
+      "size": 961
+    },
+    "game/mods/architectury-fabric-22.0.5.jar": {
+      "sha256": "c6a60979f75fdf07a97971711b42529bc84cd7e4c873625d2ce0faf34278ecda",
+      "size": 622542
+    },
+    "game/mods/Quick Skin - Fabric - 26.3-3.1.1.jar": {
+      "sha256": "42e064dd77678f8b06d9867169612828b15dbb67e1f3d00c844e17b366e78e23",
+      "size": 5515108
+    },
+    "game/mods/voicechat-2.6.27-mc26.3.jar": {
+      "sha256": "9e1c93144a3f7498e546102f6786aea6e4992866c4c5d21bd2e0edb702399153",
+      "size": 5611159
+    },
+    "game/mods/cloth-config-fabric-26.3.159.jar": {
+      "sha256": "1716b9964f90d2b885f9bd3887f8824b71b55c32a4123a5853486e722f7c2e4b",
+      "size": 1135009
+    },
+    "game/mods/delightlib-26.09.16-26.3-fabric.jar": {
+      "sha256": "6cc84add129b15dce423f261947200ed8d30dccb053727cfa220fb67c7835710",
+      "size": 60881
+    },
+    "game/mods/display-delight-1.8.5-mc26.3.jar": {
+      "sha256": "25b209e8cdd534380cbe147f2af9ce6ab9441d3f70b58a465ea05fa00f03235a",
+      "size": 1382704
+    },
+    "game/mods/FarmersDelight-26.3-3.6.30+refabricated.jar": {
+      "sha256": "930dcbc51aa2435d4345955aee7b2bbb5bc43c94c8d0859da703c645e9587269",
+      "size": 3482244
+    },
+    "game/mods/moredelight-26.09.16-26.3-fabric.jar": {
+      "sha256": "dbbfcf23f109ddb08eb47e3e96a0aaebbe9dafbd3bec71aa882c36b92f0e2037",
+      "size": 152214
+    },
+    "game/mods/rusticdelight-fabric-26.3-1.7.0.jar": {
+      "sha256": "b01591bce147fd6af0f517055a88e08f104d8abb6b192a543f4c596096325e3f",
+      "size": 1064440
+    },
+    "game/mods/storagedelight-26.10.05-26.3-fabric.jar": {
+      "sha256": "b8bc866b64c1fae01ba4164a60307b0afaec893ec7ed80dbcbbff63084f165d4",
+      "size": 1048365
+    },
+    "manifest.json": {
+      "sha256": "70dc9ed3414785947bb19ce4f5821bfaa490a677a7187050ba000542a8ab41a3",
+      "size": 678
+    },
+    "game/mods/clean-and-clear-glass-fabric-mc26.3.jar": {
+      "sha256": "fc853e4f2a65935a82e059dfd914bb6b06b6df6ec3a57280272855ffac2abb93",
+      "size": 97799
+    }
+  },
+  "remove": [
+    "game/mods/voicechat-fabric-2.6.27+26.3.jar"
+  ]
 }

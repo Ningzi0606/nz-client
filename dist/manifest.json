@@ -1,1 +1,33 @@
-{"game":"26.3","loader":"fabric","server":"play.simpfun.cn:14039","mods":["sodium","iris","immediatelyfast","entityculling","xaeros-minimap","xaeros-world-map","inventory-profiles-next","mouse-tweaks","item-scroller","jei","appleskin","jade","customskinloader","libipn","fabric-language-kotlin","malilib","i18nupdatemod","autologinmod","farmers-delight-refabricated","more-delight","delight-lib","storage-delight","display-delight-fabric","rustic-delight","cloth-config"]}
+{
+  "game": "26.3",
+  "loader": "fabric",
+  "server": "play.simpfun.cn:14039",
+  "mods": [
+    "sodium",
+    "iris",
+    "immediatelyfast",
+    "entityculling",
+    "xaeros-minimap",
+    "xaeros-world-map",
+    "inventory-profiles-next",
+    "mouse-tweaks",
+    "item-scroller",
+    "jei",
+    "appleskin",
+    "jade",
+    "customskinloader",
+    "libipn",
+    "fabric-language-kotlin",
+    "malilib",
+    "i18nupdatemod",
+    "autologinmod",
+    "farmers-delight-refabricated",
+    "more-delight",
+    "delight-lib",
+    "storage-delight",
+    "display-delight-fabric",
+    "rustic-delight",
+    "cloth-config",
+    "clean-and-clear-glass"
+  ]
+}
