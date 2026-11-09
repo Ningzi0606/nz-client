@@ -1,5 +1,5 @@
 {
-  "version": "20261109.1155",
+  "version": "20261109.1230",
   "base": "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
@@ -113,6 +113,10 @@
     "game/mods/ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar": {
       "sha256": "95cc2bd7a943f910a54baf2f65acde301dcfb3d8aeff2c989c04c416d5a4a1cd",
       "size": 609574
+    },
+    "game/config/carryon-common.json": {
+      "sha256": "bc91881fd3ff4a8e45f46b72c1b370d27ccc3e5da150d107e17a86bd30b9c046",
+      "size": 11557
     }
   },
   "remove": [
