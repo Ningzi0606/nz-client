@@ -1,5 +1,5 @@
 {
-  "version": "20261109.0950",
+  "version": "20261109.1005",
   "base": "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
@@ -79,8 +79,8 @@
       "size": 1048365
     },
     "manifest.json": {
-      "sha256": "3f4a0049a271a3b1a6d770db3bfbb64747aa2c896112555027aa6c84c95c1bd1",
-      "size": 768
+      "sha256": "2d89d33b2616d6433d9384950ad7ccfa036f19441e7dd7d71ae1918c5fba4366",
+      "size": 793
     },
     "game/mods/clean-and-clear-glass-fabric-mc26.3.jar": {
       "sha256": "fc853e4f2a65935a82e059dfd914bb6b06b6df6ec3a57280272855ffac2abb93",
@@ -101,6 +101,10 @@
     "game/mods/faewulf_lib-fabric-26.3-1.4.0.jar": {
       "sha256": "556b293180634de7f77297df818f9a5f0a7245d7a8e45bd98f74db0279175620",
       "size": 533628
+    },
+    "game/mods/music_disc_maker-3.1.3+fabric-26.3.jar": {
+      "sha256": "45358041afd77e2334220640bd71806cd93dc0ba6793a9400befdebacc165593",
+      "size": 35182531
     }
   },
   "remove": [
