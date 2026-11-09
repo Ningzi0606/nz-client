@@ -21,6 +21,10 @@
     "malilib",
     "i18nupdatemod",
     "autologinmod",
-    "clean-and-clear-glass"
+    "clean-and-clear-glass",
+    "emotecraft",
+    "player-animation-library",
+    "piggyback",
+    "faewulfslib"
   ]
 }

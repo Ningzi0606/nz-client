@@ -1,5 +1,5 @@
 {
-  "version": "20261106.1250",
+  "version": "20261109.0950",
   "base": "https://gh-proxy.com/https://raw.githubusercontent.com/Ningzi0606/nz-client/main/dist/",
   "files": {
     "app.ico": {
@@ -79,12 +79,28 @@
       "size": 1048365
     },
     "manifest.json": {
-      "sha256": "70dc9ed3414785947bb19ce4f5821bfaa490a677a7187050ba000542a8ab41a3",
-      "size": 678
+      "sha256": "3f4a0049a271a3b1a6d770db3bfbb64747aa2c896112555027aa6c84c95c1bd1",
+      "size": 768
     },
     "game/mods/clean-and-clear-glass-fabric-mc26.3.jar": {
       "sha256": "fc853e4f2a65935a82e059dfd914bb6b06b6df6ec3a57280272855ffac2abb93",
       "size": 97799
+    },
+    "game/mods/emotecraft-for-MC26.3-3.5.0-b.build.179.jar": {
+      "sha256": "46e281d928c9806c06b73eb4185a185ff085a8dfa42c974c98b4251f7b12c8c8",
+      "size": 2246411
+    },
+    "game/mods/PlayerAnimationLibMerged-1.2.9+mc.26.3.jar": {
+      "sha256": "4e9e78a1607223342566978b9c3522172879d1aa08412a6c3072468a60c57035",
+      "size": 411384
+    },
+    "game/mods/piggyback-fabric-26.3-1.1.1.jar": {
+      "sha256": "cd001e95743f0a01f809dc15d1c9f9e492f2f1e4a157c09a791fd470d74e69a8",
+      "size": 343142
+    },
+    "game/mods/faewulf_lib-fabric-26.3-1.4.0.jar": {
+      "sha256": "556b293180634de7f77297df818f9a5f0a7245d7a8e45bd98f74db0279175620",
+      "size": 533628
     }
   },
   "remove": [
