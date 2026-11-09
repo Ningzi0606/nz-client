@@ -223,7 +223,8 @@
       "expandedstorage:*",
       "replication:*",
       "coloreditemframes:*",
-      "universal_graves:*"
+      "universal_graves:*",
+      "music_disc_maker:*"
     ],
     "//forbiddenEntities": "Entities that cannot be picked up",
     "forbiddenEntities": [
