@@ -26,6 +26,9 @@
     "player-animation-library",
     "piggyback",
     "faewulfslib",
-    "music-disc-maker"
+    "music-disc-maker",
+    "carry-on",
+    "travelersbackpack",
+    "forge-config-api-port"
   ]
 }
